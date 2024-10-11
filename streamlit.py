@@ -1,5 +1,4 @@
 import streamlit as st
-import pyperclip  # 텍스트 복사 기능
 
 st.set_page_config(
     page_title="TBM 비서"
@@ -93,10 +92,6 @@ def display_script(full_script=True):
         </div>
     """, unsafe_allow_html=True)
 
-    # 텍스트 복사 버튼
-    if st.button("📋 텍스트 복사"):
-        pyperclip.copy(script_text)
-        st.success("텍스트가 클립보드에 복사되었습니다!")
 
 
 
